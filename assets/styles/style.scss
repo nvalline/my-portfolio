@@ -7,3 +7,41 @@ html, body {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em;
+    background-color: #62929a;
+
+    
+    .logo {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #efecec;
+        text-transform: uppercase;
+        width: 50%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+
+            a i {
+                padding: 0 .5em;
+                font-size: 2.5em;
+                color: #efecec;
+            }
+        }
+    }
+}

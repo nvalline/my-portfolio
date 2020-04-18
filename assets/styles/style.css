@@ -8,4 +8,52 @@ html, body {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1.5em;
+  background-color: #62929a;
+}
+
+header .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #efecec;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+header nav ul li a i {
+  padding: 0 .5em;
+  font-size: 2.5em;
+  color: #efecec;
+}
 /*# sourceMappingURL=style.css.map */
