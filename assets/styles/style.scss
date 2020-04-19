@@ -1,3 +1,8 @@
+$dark-color: #171332;
+$dark-green-color: #2a5d67;
+$white-color: #eeeeee;
+$light-green-color: #4ae3b5;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,6 +11,7 @@ html, body {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: $dark-color;
 }
 
 header {
@@ -14,13 +20,13 @@ header {
     align-items: center;
     width: 100%;
     padding: 1.5em;
-    background-color: #62929a;
+    background-color: $dark-color;
 
     
     .logo {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        color: #efecec;
+        color: $white-color;
         text-transform: uppercase;
         width: 50%;
     }
@@ -39,9 +45,30 @@ header {
 
             a i {
                 padding: 0 .5em;
-                font-size: 2.5em;
-                color: #efecec;
+                font-size: 2em;
+                color: $white-color;
             }
         }
     }
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    
+    .about {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em;
+
+        .profile-img {
+            height: 300px;
+            border-radius: 20px;                margin: 0 auto;
+        }
+
+        .about-info p {
+            font-size: 1em;
+            line-height: 1.2em;
+        }
+    }   
 }
