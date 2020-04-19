@@ -60,6 +60,10 @@ header nav ul li a i {
   color: #eeeeee;
 }
 
+header nav ul li a i:hover {
+  color: #4ae3b5;
+}
+
 main {
   width: 100%;
   text-align: center;
@@ -86,6 +90,21 @@ main .about .about-info p, main .projects .about-info p {
   line-height: 1.3em;
 }
 
+main .about .about-info a, main .projects .about-info a {
+  border: 2px solid #2a5d67;
+  border-radius: 10px;
+  color: #2a5d67;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+main .about .about-info a:hover, main .projects .about-info a:hover {
+  background-color: #e9e8e8;
+  font-weight: bold;
+}
+
 main .project-wrapper {
   border: 1px solid #171332;
   border-radius: 5px;
@@ -103,7 +122,23 @@ main .project-wrapper .project-img img {
   width: 270px;
 }
 
-main .project-wrapper .project-info {
+main .project-wrapper .project-content {
+  background-color: #2a5d67;
+  color: #eeeeee;
+  padding: 1em;
+}
+
+main .project-wrapper .project-content h3 {
+  margin: 0;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+main .project-wrapper .project-content p {
+  line-height: 1.3em;
+}
+
+main .project-wrapper .project-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,21 +150,10 @@ main .project-wrapper .project-info {
       -ms-flex-align: center;
           align-items: center;
   background-color: #2a5d67;
-  color: #eeeeee;
-  padding: 1em;
+  padding-bottom: 1em;
 }
 
-main .project-wrapper .project-info h3 {
-  margin: 0;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-main .project-wrapper .project-info p {
-  line-height: 1.3em;
-}
-
-main .project-wrapper .project-info a {
+main .project-wrapper .project-btns a {
   background-color: #4ae3b5;
   border: 2px solid #95e4cd;
   border-radius: 10px;
@@ -139,7 +163,7 @@ main .project-wrapper .project-info a {
   text-decoration: none;
 }
 
-main .project-wrapper .project-info a:hover {
+main .project-wrapper .project-btns a:hover {
   background-color: #95e4cd;
   font-weight: bold;
 }
@@ -155,12 +179,13 @@ main .contact a {
   color: #eeeeee;
   font-weight: bold;
   display: inline-block;
-  padding: 1em;
+  padding: 0.8em 1.5em;
   text-decoration: none;
 }
 
 main .contact a:hover {
   background-color: #555074;
+  color: #4ae3b5;
 }
 
 footer {
@@ -178,5 +203,97 @@ footer {
           align-items: center;
   padding: 2.5em;
   width: calc(100% - 5em);
+}
+
+/*-- Responsiveness --*/
+/* min width 768px */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  html .about-info {
+    margin: 0 auto;
+    max-width: 620px;
+  }
+  html .project-wrapper {
+    margin: 0 auto 1em;
+    max-width: 500px;
+  }
+}
+
+/* min width 992px */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .about-img {
+    margin-top: 1.8em;
+    margin-right: 2em;
+  }
+  .about .about-img .profile-img {
+    height: 400px;
+  }
+  .projects {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title title" "pro1 pro2" "pro3 pro4";
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .projects h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .projects #pro1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: pro1;
+  }
+  .projects #pro2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: pro2;
+  }
+  .projects #pro3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: pro3;
+  }
+  .projects #pro4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: pro4;
+  }
+  .projects .project-img img {
+    width: 350px;
+  }
+  .projects .project-content {
+    height: 200px;
+  }
+}
+
+/* min width 1200px */
+@media only screen and (min-width: 1200px) {
+  section {
+    max-width: 960px;
+  }
+}
+
+/* min width 1789px */
+@media only screen and (min-width: 1920px) {
+  body {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
