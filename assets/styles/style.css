@@ -8,6 +8,7 @@ html, body {
 body {
   font-family: 'Montserrat', sans-serif;
   color: #171332;
+  background-color: #eeeeee;
 }
 
 header {
@@ -19,13 +20,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: calc(100% - 3em);
   padding: 1.5em;
   background-color: #171332;
+  border-bottom: 10px solid #4ae3b5;
 }
 
 header .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #eeeeee;
   text-transform: uppercase;
@@ -54,7 +56,7 @@ header nav ul li a {
 
 header nav ul li a i {
   padding: 0 .5em;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #eeeeee;
 }
 
@@ -63,20 +65,118 @@ main {
   text-align: center;
 }
 
-main .about {
+main section {
   width: 80%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 2em 1em;
 }
 
-main .about .profile-img {
+main .about, main .projects {
+  border-bottom: 1px solid #4ae3b5;
+}
+
+main .about .profile-img, main .projects .profile-img {
   height: 300px;
   border-radius: 20px;
   margin: 0 auto;
 }
 
-main .about .about-info p {
+main .about .about-info p, main .projects .about-info p {
   font-size: 1em;
-  line-height: 1.2em;
+  line-height: 1.3em;
+}
+
+main .project-wrapper {
+  border: 1px solid #171332;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+main .project-wrapper .project-img {
+  background-color: #ffffff;
+  border-radius: 5px 5px 0 0;
+  padding-top: 1em;
+}
+
+main .project-wrapper .project-img img {
+  margin: 1em;
+  width: 270px;
+}
+
+main .project-wrapper .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2a5d67;
+  color: #eeeeee;
+  padding: 1em;
+}
+
+main .project-wrapper .project-info h3 {
+  margin: 0;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+main .project-wrapper .project-info p {
+  line-height: 1.3em;
+}
+
+main .project-wrapper .project-info a {
+  background-color: #4ae3b5;
+  border: 2px solid #95e4cd;
+  border-radius: 10px;
+  color: #171332;
+  margin-bottom: 10px;
+  padding: 0.6em;
+  text-decoration: none;
+}
+
+main .project-wrapper .project-info a:hover {
+  background-color: #95e4cd;
+  font-weight: bold;
+}
+
+main .contact p {
+  margin-bottom: 1em;
+}
+
+main .contact a {
+  background-color: #171332;
+  border: 2px solid #555074;
+  border-radius: 10px;
+  color: #eeeeee;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+main .contact a:hover {
+  background-color: #555074;
+}
+
+footer {
+  background-color: #171332;
+  border-top: 10px solid #4ae3b5;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5em;
+  width: calc(100% - 5em);
 }
 /*# sourceMappingURL=style.css.map */
