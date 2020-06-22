@@ -83,18 +83,18 @@ main {
         }
 
         .about-info a {
-            border: 2px solid $dark-green-color;
+            background-color: $dark-green-color;
+            border: 2px solid $dark-color;
             border-radius: 10px;
-            color: $dark-green-color;
+            color: $white-color;
             display: inline-block;
-            font-size: 0.8em;
-            padding: 0.5em 1em;
+            font-size: 0.9em;
+            padding: 0.75em 1em;
             text-decoration: none;
         }
 
         .about-info a:hover {
-            background-color: #e9e8e8;
-            font-weight: bold;
+            background-color: #518893;
         }
     }
 
@@ -110,7 +110,8 @@ main {
 
             img {
                 margin: 1em;
-                width: 270px;
+                max-height: 120px;
+                max-width: 270px;
             }
         }
 

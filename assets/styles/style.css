@@ -91,18 +91,18 @@ main .about .about-info p, main .projects .about-info p {
 }
 
 main .about .about-info a, main .projects .about-info a {
-  border: 2px solid #2a5d67;
+  background-color: #2a5d67;
+  border: 2px solid #171332;
   border-radius: 10px;
-  color: #2a5d67;
+  color: #eeeeee;
   display: inline-block;
-  font-size: 0.8em;
-  padding: 0.5em 1em;
+  font-size: 0.9em;
+  padding: 0.75em 1em;
   text-decoration: none;
 }
 
 main .about .about-info a:hover, main .projects .about-info a:hover {
-  background-color: #e9e8e8;
-  font-weight: bold;
+  background-color: #518893;
 }
 
 main .project-wrapper {
@@ -119,7 +119,8 @@ main .project-wrapper .project-img {
 
 main .project-wrapper .project-img img {
   margin: 1em;
-  width: 270px;
+  max-height: 120px;
+  max-width: 270px;
 }
 
 main .project-wrapper .project-content {
